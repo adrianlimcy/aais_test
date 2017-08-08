@@ -1,0 +1,21 @@
+<h1>Service Order Lookup</h1>
+<%= form_tag root_url, method: :get do %>
+<p>
+  <%= text_field_tag :service_order, params[:service_order] %>
+  <%= submit_tag "Lookup", name: nil %>
+</p>
+<% end %>
+<% if @service_order %>
+  <dl id ="service_order_info">
+    <dt>Service Number:</dt>
+    <dd><%= @service_order.service_no %></dd>
+    <dt>Item Number:</dt>
+    <dd><%= @service_order.item_no %></dd>
+    <dt>Serial Number:</dt>
+    <dd><%= @service_order.serial_no %></dd>
+    <dt>Service Type:</dt>
+    <dd><%= @service_no.service_type %>
+    <dt>Status:</dt>
+    <dd><%= @service_no.so_status %></dd>
+  </dl>
+<% end %>
