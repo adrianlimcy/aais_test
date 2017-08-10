@@ -14,8 +14,10 @@
     <dt>Serial Number:</dt>
     <dd><%= @service_order.serial_no %></dd>
     <dt>Service Type:</dt>
-    <dd><%= @service_no.service_type %>
+    <dd><%= @service_order.service_type %>
     <dt>Status:</dt>
-    <dd><%= @service_no.so_status %></dd>
+    <dd><%= @service_order.so_status %></dd>
+    <dt>Company Name:</dt>
+    <dd><%= @service_order.name %></dd>
   </dl>
 <% end %>

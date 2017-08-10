@@ -36,6 +36,8 @@ gem 'jbuilder', '~> 2.5'
 # adding jquery-rails and savon
 gem 'jquery-rails'
 gem 'savon'
+#adding nokogiri
+gem 'nokogiri'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
